@@ -56,11 +56,6 @@ Understand how Git handles branching, merging, and merge conflicts, and learn ho
 - Git simply moves the branch pointer forward
 - No merge commit is created
 
-Example:
-```bash
-git merge feature-A
-
-
 # Git Remote Repositories (GitHub) - Day 4
 
 ## 📌 Objective
