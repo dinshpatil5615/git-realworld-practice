@@ -121,9 +121,9 @@ git commit --amend
 
 ---
 
-Topics Covered  
+## Topics Covered  
 
-1. Git Reset  
+### 1. Git Reset  
 Used to move HEAD and optionally modify staging area and working directory.
 
 Types of Reset  
@@ -134,52 +134,65 @@ Soft Reset
 - Commit is removed but code is safe  
 
 Example:  
+```
 git reset --soft HEAD~1  
+```
 
 Mixed Reset (Default)  
 - Moves HEAD and clears staging area  
 - Keeps changes in working directory  
 
 Example:  
-git reset --mixed HEAD~1  
+```
+git reset --mixed HEAD~1
+``` 
 
 Hard Reset  
 - Moves HEAD and deletes all changes  
 - Changes are permanently lost  
 
 Example:  
+```
 git reset --hard HEAD~1  
+```
 
 ---
 
-2. Git Revert  
+### 2. Git Revert  
 - Creates a new commit that reverses changes  
 - Safe for shared and production branches  
 
 Example:  
+```
 git revert <commit-id>  
+```
 
 ---
 
-3. Git Restore  
+### 3. Git Restore  
 - Restores file content from last commit or staging area  
 - Does not change commit history  
 
 Restore unstaged file:  
-git restore <file-name>  
+```
+git restore <file-name>
+``` 
 
 Restore staged file:  
+```
 git restore --staged <file-name>  
+```
 
 ---
 
-4. Amend Commit  
+### 4. Amend Commit  
 - Modifies the most recent commit  
 - Used to fix commit message or add missed files  
 
 Example:  
+```
 git commit --amend  
-
+```
 ---
 
 Key Learnings  
