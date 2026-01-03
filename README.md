@@ -1,6 +1,6 @@
-### Git Basics – Day 1
+## Git Basics – Day 1
 
-## Commands Practiced
+### Commands Practiced
 - git status
 - git add
 - git commit
