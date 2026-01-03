@@ -68,15 +68,18 @@ Learn how to connect a local Git repository to GitHub and sync code using remote
 ### 1. git remote
 - View remote repositories
 - Add a remote repository
-```bash
+
 git remote
 git remote -v
 git remote add origin <repository-url>
+
+---
 
 ### 2. git clone
 Clone an existing GitHub repository
 git clone <repository-url>
 
+---
 ### 3. git push
 Push local commits to GitHub
 git push -u origin main
