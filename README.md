@@ -60,3 +60,4 @@ Example:
 ```bash
 git merge feature-A
 
+### 3 - Git push , pull and git fetch
