@@ -59,3 +59,41 @@ Understand how Git handles branching, merging, and merge conflicts, and learn ho
 Example:
 ```bash
 git merge feature-A
+
+
+# Git Remote Repositories (GitHub) - Day 4
+
+## 📌 Objective
+Learn how to connect a local Git repository to GitHub and sync code using remote commands.
+
+---
+
+## 🧠 Topics Covered
+
+### 1. git remote
+- View remote repositories
+- Add a remote repository
+```bash
+git remote
+git remote -v
+git remote add origin <repository-url>
+
+### 2. git clone
+Clone an existing GitHub repository
+git clone <repository-url>
+
+### 3. git push
+Push local commits to GitHub
+git push -u origin main
+git push
+
+### 4. git pull
+Fetch and merge changes from remote
+git pull origin main
+
+### 5. git fetch
+Download remote changes without merging
+git fetch origin
+git branch -r
+git diff origin/main
+
