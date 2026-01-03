@@ -33,7 +33,7 @@
 - Teams isolate work using branches
 - Merge strategy depends on team workflow
 
-# Day 3 – Git Branching, Merging & Conflict Resolution
+# Git Branching, Merging & Conflict Resolution - Day 3 
 
 ## Objective
 Understand how Git handles branching, merging, and merge conflicts, and learn how to resolve conflicts manually like in real-world projects.
