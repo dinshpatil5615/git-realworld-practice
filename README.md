@@ -33,28 +33,110 @@
 - Teams isolate work using branches
 - Merge strategy depends on team workflow
 
-## Git Branching, Merging & Conflict Resolution - Day 3 
+## Git Branching, Merging & Conflict Resolution – Day 3
 
-### Objective
-Understand how Git handles branching, merging, and merge conflicts, and learn how to resolve conflicts manually like in real-world projects.
-
----
-
-### Topics Covered
-
-### 1. Git Branching
-- Created multiple branches (`feature-A`, `feature-B`)
-- Understood how branches allow parallel development
-- Learned how branches diverge from a common base commit
+### Objective  
+Understand how Git supports parallel development using branches, how merging works, and how to resolve merge conflicts manually in real-world scenarios.
 
 ---
 
-### 2. Fast-Forward vs Merge Commit
+### Commands Used  
+git branch  
+git switch  
+git checkout  
+git merge  
+git status  
+git diff  
+git log --graph --oneline  
+git branch -d  
 
-#### Fast-Forward Merge
-- Happens when the target branch has **no new commits**
-- Git simply moves the branch pointer forward
-- No merge commit is created
+---
+
+### Topics Covered  
+
+### 1. Git Branching  
+- Created multiple branches (feature-A, feature-B)  
+- Learned how branches allow parallel development  
+- Understood that branches are pointers to commits, not copies of code  
+- Observed how branches diverge from a common base commit  
+
+Example:
+```
+git branch feature-A  
+git switch feature-A  
+```
+
+---
+
+### 2. Fast-Forward Merge  
+
+Fast-Forward Merge  
+- Happens when the target branch has no new commits  
+- Git simply moves the branch pointer forward  
+- No new merge commit is created  
+
+Example:
+```
+git switch main  
+git merge feature-A  
+```
+---
+
+### 3. Merge Commit  
+
+Merge Commit  
+- Happens when both branches have new commits  
+- Git creates a new merge commit  
+- Complete branch history is preserved  
+
+Example:
+```
+git merge feature-B  
+```
+
+---
+
+### 4. Merge Conflicts  
+
+Merge Conflict  
+- Occurs when the same file is modified differently in two branches  
+- Git cannot decide which change to keep  
+- Conflict must be resolved manually  
+
+Conflict Resolution Steps  
+1. Run merge command  
+2. Identify conflicted files using git status  
+3. Open the file and resolve conflicts  
+4. Remove conflict markers  
+5. Add the resolved file  
+6. Commit the merge  
+
+Commands:
+```
+git status  
+git add <file-name>  
+git commit  
+```
+
+---
+
+Key Learnings  
+- Branches are lightweight and efficient  
+- Fast-forward merges keep history linear  
+- Merge commits record branch integration  
+- Merge conflicts are common in team environments  
+- Git never resolves conflicts automatically  
+
+---
+
+Interview Notes  
+- Teams use branches to isolate features and fixes  
+- Fast-forward merge occurs when history is linear  
+- Merge commits are created when histories diverge  
+- Conflict resolution is a developer responsibility  
+- Understanding git log --graph helps visualize branching  
+
+---
 
 ## Git Remote Repositories (GitHub) - Day 4
 
