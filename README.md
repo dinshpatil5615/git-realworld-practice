@@ -185,7 +185,7 @@ git diff origin/main
 ```
 ---
 
-## Git Undoing Changes – Reset, Revert & Restore – Day 4
+## Git Undoing Changes – Reset, Revert & Restore – Day 5
 
 ### Objective  
 Understand how to undo changes safely and unsafely in Git using reset, revert, and restore commands, and know when to use each in real-world projects.
