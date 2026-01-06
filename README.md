@@ -292,3 +292,80 @@ Interview Notes
 - Restore replaces checkout for undoing file changes  
 
 ---
+
+## Git Workflows, Best Practices & Interview Preparation – Day 6
+
+### Objective  
+Understand how Git is used in real-world team environments, common workflows followed in companies, and prepare Git concepts for technical interviews.
+
+---
+
+### Topics Covered  
+
+### 1. Git Workflow (Real-World Usage)
+- Feature-based development workflow
+- Developers create feature branches
+- Code is merged into main or develop branch after review
+- Used widely in DevOps and CI/CD pipelines
+
+Typical Flow:
+- main → stable production-ready code
+- feature/* → new features or fixes
+- hotfix/* → urgent production fixes
+
+---
+
+### 2. Pull Request (PR) Concept
+- Pull Request is a request to merge code from one branch to another
+- Code is reviewed before merging
+- Used in GitHub, GitLab, Bitbucket
+
+Key Points:
+- Improves code quality
+- Enables team collaboration
+- Prevents direct changes to main branch
+
+---
+
+### 3. Git Best Practices
+- Make small and meaningful commits
+- Write clear commit messages
+- Pull or fetch before pushing
+- Never use hard reset on shared branches
+- Use revert for production fixes
+- Delete merged branches to keep repo clean
+
+---
+
+### 4. Common Git Interview Questions (Conceptual)
+
+- Difference between git fetch and git pull
+- Difference between git reset and git revert
+- What is a merge conflict and how do you resolve it?
+- What happens during a fast-forward merge?
+- When should you use git commit --amend?
+- Why should history not be rewritten on shared branches?
+
+---
+
+### 5. Git in DevOps
+- Git triggers CI/CD pipelines
+- Infrastructure as Code stored in Git
+- Git acts as a single source of truth
+- Used with tools like Jenkins, GitHub Actions, ArgoCD
+
+---
+
+### Key Learnings  
+- Git workflows help teams collaborate efficiently  
+- Pull Requests are essential for controlled code merging  
+- Best practices prevent data loss and conflicts  
+- Git knowledge is critical for DevOps roles  
+
+---
+
+### Interview Notes  
+- Git is not just a tool, it is a workflow enabler  
+- Revert is preferred over reset in production  
+- Fetch is safer than pull in team environments  
+- Pull Requests improve collaboration and code quality
